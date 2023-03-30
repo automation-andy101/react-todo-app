@@ -3,9 +3,9 @@ import React from 'react';
 
 const TotalCompleteItems = () => {
   return (
-    <div>
-      
-    </div>
+    <h4 className='mt-3'> 
+      Total Complete Items: 5
+    </h4>
   )
 }
 
