@@ -1,10 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 
 const TotalCompleteItems = () => {
+  // return all todos that are marked as completed (true)
+  const completedTodos = useSelector((state) => 
+    state.todos.filter((todo) => todo.completed === true)
+  );
+
   return (
     <h4 className='mt-3'> 
-      Total Complete Items: 5
+      Total Complete Items: {completedTodos.length}
     </h4>
   )
 }

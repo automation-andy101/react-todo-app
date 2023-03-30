@@ -11,7 +11,7 @@ function App() {
       <h1>My Todo List</h1>
       <AddTodoForm />
       <TodoList />
-      {/* <TotalCompleteItems /> */}
+      <TotalCompleteItems />
     </div>
   );
 };
